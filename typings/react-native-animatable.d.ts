@@ -6,6 +6,7 @@ import {
     ViewStyle,
     TextStyle,
     ImageStyle
+    TransformsStyle,
 } from 'react-native';
 import {
     StatelessComponent,
@@ -157,7 +158,7 @@ interface AnimatableComponent<P extends {}, S extends {}> extends
     ): void;
 }
 
-export interface CustomAnimation<T = TextStyle & ViewStyle & ImageStyle> {
+export interface CustomAnimation<T = TextStyle & ViewStyle & ImageStyle & TransformsStyle> {
     from?: T;
     to?: T;
     style?: T;
